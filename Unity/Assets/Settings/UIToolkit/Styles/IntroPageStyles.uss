@@ -1,0 +1,24 @@
+.center-container {
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.left-container {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    align-self: stretch;
+}
+
+.right-container {
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.content-layer {
+    background-color: rgb(128, 102, 0);
+}
