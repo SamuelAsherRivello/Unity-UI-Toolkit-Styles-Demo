@@ -13,4 +13,4 @@ WORKFLOW: CONS
 * (None)
 
 WORKFLOW: PENDING
-* How to auto-complete when entering custom variables in ui builder?
+* How to auto-complete when entering custom variables in ui builder? Given my particular file setup, I'm not seeing it.
