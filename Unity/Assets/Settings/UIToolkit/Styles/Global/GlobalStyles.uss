@@ -7,6 +7,14 @@
     letter-spacing: 3px;
 }
 
+.unity-button {
+    margin-top: 0.5%;
+}
+
+.unity-text-field {
+    margin-top: 0.5%;
+}
+
 .layer {
     position: absolute;
     top: 0;
@@ -22,13 +30,6 @@
     flex-grow: 1;
 }
 
-.line {
-    flex-grow: 0;
-    background-color: var(--theme-line-color);
-    min-width: 5px;
-    min-height: 5px;
-}
-
 .spacer-small {
     min-width: 40px;
     min-height: 40px;
@@ -40,4 +41,15 @@
 
 .body {
     white-space: pre-wrap;
+}
+
+.line {
+    flex-grow: 0;
+    background-color: var(--theme-line-color);
+    min-width: 5px;
+    min-height: 5px;
+}
+
+.h2 {
+    font-size: 60px;
 }
