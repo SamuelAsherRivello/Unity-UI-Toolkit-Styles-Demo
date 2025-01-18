@@ -1,3 +1,11 @@
+.center-container {
+    background-color: var(--theme-background-color);
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
 .content-layer {
     background-color: rgb(97, 92, 0);
 }
