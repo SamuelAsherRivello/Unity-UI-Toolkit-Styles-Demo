@@ -26,7 +26,7 @@ MonoBehaviour:
     MenuItemPath: 
   - TextHeading: Getting Started
     TextSubheading: 
-    TextBody: Load any Scene directly, without any bootstrapping concerns.\nIt 'just
+    TextBody: Load any Scene directly, without any bootstrapping concerns. It 'just
       works'.
     LinkName: 
     LinkUrl: 
