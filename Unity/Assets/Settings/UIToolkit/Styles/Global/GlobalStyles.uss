@@ -18,20 +18,8 @@
 .content-layer {
 }
 
-.logo {
-    background-image: url("project://database/Assets/Art/Vectors/Logo.svg?fileID=7388822144124034973&guid=a9e5b9b31da73b047ae9fe3c2bc2c702&type=3#Logo");
-    -unity-background-scale-mode: scale-to-fit;
-    width: 800px;
-    height: 800px;
-}
-
 .container {
     flex-grow: 1;
-}
-
-.form {
-    flex-grow: 1;
-    align-content: center;
 }
 
 .line {
@@ -39,6 +27,11 @@
     background-color: var(--theme-line-color);
     min-width: 5px;
     min-height: 5px;
+}
+
+.spacer-small {
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .h1 {

@@ -19,8 +19,3 @@
     margin-left: 50px;
     align-items: center;
 }
-
-.spacer-small {
-    min-width: 40px;
-    min-height: 40px;
-}
