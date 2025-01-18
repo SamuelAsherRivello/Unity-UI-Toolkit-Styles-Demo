@@ -1,53 +1,55 @@
-using RMC.Audio;
 using RMC.TravelGuide.Page.UIs;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace RMC.TravelGuide.Pages
 {
     /// <summary>
     /// Main entry point for the Scene
+    ///
+    /// See view at <see cref="IntroPageUI"/>
+    /// 
     /// </summary>
     public class IntroPage : Page
     {
         //  Properties ------------------------------------
-        public PageUI PageUI { get { return _pageUI; } }
+        private IntroPageUI IntroPageUI { get { return _pageUI as IntroPageUI; } }
 
-        
+            
         //  Fields ----------------------------------------
 
         
         //  Unity Methods ---------------------------------
-        
-        /// <summary>
-        /// Runs once per Scene. Use for initialization
-        /// </summary>
         protected override void Start()
         {
             base.Start();
             Debug.Log($"{GetType().Name}.Start()");
+            
+            IntroPageUI.NextPageButton.RegisterCallback<ClickEvent>(NextPageButton_OnClickEvent);
+            IntroPageUI.NextSectionButton.RegisterCallback<ClickEvent>(NextSectionButton_OnClickEvent);
+        }
+        
+        
+        protected override void OnDestroy()
+        {
+            IntroPageUI?.NextPageButton?.UnregisterCallback<ClickEvent>(NextPageButton_OnClickEvent);
+            IntroPageUI?.NextSectionButton?.UnregisterCallback<ClickEvent>(NextSectionButton_OnClickEvent);
+            base.OnDestroy();
         }
 
         
         //  Methods ---------------------------------------
-        /// <summary>
-        /// Restart the same Scene as a #hack to restart the game
-        /// </summary>
-        private void ReloadGame()
+
+        
+        //  Event Handlers --------------------------------
+        private void NextSectionButton_OnClickEvent(ClickEvent evt)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("TODO: NextSectionButton_OnClickEvent() ");
         }
         
-
-        /// <summary>
-        /// Play system using the AudioManager imported via https://github.com/SamuelAsherRivello/rmc-core/
-        /// </summary>
-        /// <param name="audioClipName">Must match AudioClip name within Assets/Settings/Audio/AudioManagerConfiguration.asset</param>
-        private void PlayAudioClip(string audioClipName)
+        private void NextPageButton_OnClickEvent(ClickEvent evt)
         {
-            AudioManager.Instance.PlayAudioClip(audioClipName);
+            LoadNextScene();
         }
-
-        //  Event Handlers --------------------------------
     }
 }

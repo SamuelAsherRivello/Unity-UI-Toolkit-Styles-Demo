@@ -1,0 +1,18 @@
+TODO
+* (None)
+
+
+WORKFLOW: PROS
+* Global styles (e.g. all layouts
+* Shared styles (e.g. all page layouts)
+* Unshared styles (e.g. layout specific)
+* Excellent cascading of styles. 
+* Excellent theming (dark is default at **BOTH** edit-time and runtime)
+* Excellent use of ui builder (100% builder preview of all layout, styles, variables... except "pending")
+
+WORKFLOW: CONS
+* (None)
+
+
+WORKFLOW: PENDING
+* How to auto-complete when entering custom variables in ui builder?

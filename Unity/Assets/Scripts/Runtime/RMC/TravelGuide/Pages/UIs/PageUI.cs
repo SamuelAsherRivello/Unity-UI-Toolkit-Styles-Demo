@@ -32,6 +32,12 @@ namespace RMC.TravelGuide.Page.UIs
             // Initialize the ThemeManager
             _themeManager = new ThemeManager(_uiDocument, _lightStyleSheet, _darkStyleSheet);
         }
+        
+        
+        protected virtual void OnDestroy()
+        {
+            //
+        }
 
         
         //  Methods ---------------------------------------

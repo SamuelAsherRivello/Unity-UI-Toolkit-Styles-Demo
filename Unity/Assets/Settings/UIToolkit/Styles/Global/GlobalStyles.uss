@@ -17,6 +17,10 @@
     margin-top: 0.5%;
 }
 
+.unity-text-field > #unity-text-input > .unity-text-element {
+    color: rgb(0, 0, 0);
+}
+
 .layer {
     position: absolute;
     top: 0;

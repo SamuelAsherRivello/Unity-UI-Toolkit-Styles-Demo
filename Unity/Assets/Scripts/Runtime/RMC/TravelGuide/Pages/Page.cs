@@ -40,7 +40,7 @@ namespace RMC.TravelGuide.Pages
             // Click [3] to reload scene
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                ReloadScene();
+                LoadCurrentScene();
             }
             
             // Click [4] to reload game
@@ -51,22 +51,43 @@ namespace RMC.TravelGuide.Pages
         }
         
         
+        protected virtual void OnDestroy()
+        {
+            //
+        }
+        
+        
         //  Methods ---------------------------------------
         /// <summary>
-        /// Restart the same Scene as a #hack to restart the game
+        /// Reload the current Scene
         /// </summary>
-        private void ReloadScene()
+        private void LoadCurrentScene()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            int nextBuildIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(nextBuildIndex);
+        }
+        
+        /// <summary>
+        /// Reload the current Scene
+        /// </summary>
+        protected void LoadNextScene()
+        {
+            int nextBuildIndex = 0;
+            if (SceneManager.GetActiveScene().buildIndex == nextBuildIndex)
+            {
+                nextBuildIndex++;
+            }
+            SceneManager.LoadScene(nextBuildIndex);
         }
         
         
         /// <summary>
-        /// Restart the same Scene as a #hack to restart the game
+        /// Load the first Scene as a #hack to restart the game
         /// </summary>
         private void ReloadGame()
         {
-            SceneManager.LoadScene(0);
+            int nextBuildIndex = 0;
+            SceneManager.LoadScene(nextBuildIndex);
         }
         
 

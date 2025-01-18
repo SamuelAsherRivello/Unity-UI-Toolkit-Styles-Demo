@@ -1,16 +1,17 @@
+using RMC.TravelGuide.Pages;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace RMC.TravelGuide.Page.UIs
 {
     /// <summary>
-    /// Renders the UI for the <see cref="Page"/>
+    /// This is the view for the <see cref="IntroPage"/>
     /// </summary>
     public class IntroPageUI : PageUI
     {
         //  Properties ------------------------------------
-        public Button NextSectionButton { get { return UIDocument?.rootVisualElement.Q<Button>("NextSectionButton"); }}
-        public Button NextPageButton { get { return UIDocument?.rootVisualElement.Q<Button>("NextPageButton"); }}
+        public Button NextSectionButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextSectionButton"); }}
+        public Button NextPageButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextPageButton"); }}
         
         
         //  Fields ----------------------------------------
@@ -28,5 +29,6 @@ namespace RMC.TravelGuide.Page.UIs
 
         
         //  Event Handlers --------------------------------
+
     }
 }
