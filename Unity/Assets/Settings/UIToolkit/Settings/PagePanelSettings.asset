@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 19101, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TravelGuidePanelSettings
+  m_Name: PagePanelSettings
   m_EditorClassIdentifier: 
   themeUss: {fileID: -4733365628477956816, guid: 014d23c695bda1740a2a97aa9e911773, type: 3}
   m_DisableNoThemeWarning: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   m_ReferenceResolution: {x: 3840, y: 2160}
   m_ScreenMatchMode: 1
   m_Match: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
   m_BindingLogLevel: 0
   m_ClearDepthStencil: 1

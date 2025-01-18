@@ -1,0 +1,11 @@
+.corner-container {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+
+.corner-label {
+}
+
+.corner-label {
+}

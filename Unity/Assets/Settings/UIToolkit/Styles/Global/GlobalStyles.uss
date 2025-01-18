@@ -15,20 +15,7 @@
     right: 0;
 }
 
-.center-container {
-    background-color: var(--theme-background-color);
-    margin-top: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    padding-top: 1%;
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-}
-
 .content-layer {
-    background-color: rgb(128, 102, 0);
 }
 
 .logo {
@@ -60,4 +47,16 @@
 
 .body {
     white-space: pre-wrap;
+}
+
+.center-container {
+    background-color: var(--theme-background-color);
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
 }
