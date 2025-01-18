@@ -1,6 +1,7 @@
 TODO
-* Make a custom component? Perhaps it's out of scope.
-* Make a custom component that accepts children. This is not the automatic behavior of Unity, but may be possible and would help to demonstrate high compatibility between two similar pages. I'll think about it.
+* Make a typical localization setup? Perhaps it's out of scope. I have another demo repo for that.
+* Make a typical custom component? Perhaps it's out of scope.
+* Make a custom component THAT ACCEPTS CHILDREN. This is not the default behavior of Unity, but MIGHT be possible and would help to demonstrate high compatibility between two similar pages. I'll think about it.
 
 WORKFLOW: PROS
 * Global styles (e.g. all layouts)
