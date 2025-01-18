@@ -29,14 +29,14 @@ namespace RMC.Templates
 
 
 		//  Methods ---------------------------------------
-		[MenuItem(MenuItemName01, false, Priority)]
+		//[MenuItem(MenuItemName01, false, Priority)]
 		public static void SampleMenuItem()
 		{
 			Debug.Log("SampleMenuItem()");
 		}
 
 		
-		[MenuItem(MenuItemName01, true, Priority)]
+		//[MenuItem(MenuItemName01, true, Priority)]
 		public static bool SampleMenuItem_Validate()
 		{
 			return true; //return false to grey-out the menu item
