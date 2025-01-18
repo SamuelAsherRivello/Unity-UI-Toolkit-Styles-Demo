@@ -32,9 +32,16 @@ namespace RMC.TravelGuide.Page.UIs
             
             // Initialize the ThemeManager
             _themeManager = new ThemeManager(_uiDocument, _lightStyleSheet, _darkStyleSheet);
+        }
 
-            // Example: Toggle theme after 3 seconds
-            Invoke(nameof(ToggleTheme), 2f);
+        
+        protected void Update()
+        {
+            // Click [2] to toggle the theme
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                ToggleTheme();
+            }
         }
 
         
@@ -42,10 +49,7 @@ namespace RMC.TravelGuide.Page.UIs
         private void ToggleTheme()
         {
             _themeManager.IsDark = !_themeManager.IsDark;
-            
             //Debug.Log($"ThemeManager.IsDark = {_themeManager.IsDark}");
-            
-            Invoke(nameof(ToggleTheme), 2f);
         }
 
         
