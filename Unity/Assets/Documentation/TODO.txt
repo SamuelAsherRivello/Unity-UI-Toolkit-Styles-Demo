@@ -1,5 +1,6 @@
 TODO
-* (None)
+* Make a custom component? Perhaps it's out of scope.
+* Make a custom component that accepts children. This is not the automatic behavior of Unity, but may be possible and would help to demonstrate high compatibility between two similar pages. I'll think about it.
 
 WORKFLOW: PROS
 * Global styles (e.g. all layouts)
@@ -7,7 +8,7 @@ WORKFLOW: PROS
 * Unshared styles (e.g. layout specific)
 * Excellent cascading of styles. 
 * Excellent theming (dark is default at **BOTH** edit-time and runtime)
-* Excellent use of ui builder (100% builder preview of all layout, styles, variables... except "pending")
+* Excellent use of UI Builder (100% proper preview of all layout, styles, variables... except "pending")
 
 WORKFLOW: CONS
 * (None)
