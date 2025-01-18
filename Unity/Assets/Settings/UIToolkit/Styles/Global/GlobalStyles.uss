@@ -9,6 +9,8 @@
 
 .unity-button {
     margin-top: 0.5%;
+    background-color: var(--theme-background-color-inverse);
+    color: var(--theme-font-color-inverse);
 }
 
 .unity-text-field {

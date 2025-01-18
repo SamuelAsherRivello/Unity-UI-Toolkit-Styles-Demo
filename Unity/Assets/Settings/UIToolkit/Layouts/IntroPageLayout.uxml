@@ -15,7 +15,7 @@
                     <ui:Label text="About" name="AboutLabel" class="h2" />
                     <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mauris dui, imperdiet eget aliquam id, viverra malesuada enim. Aenean consectetur pellentesque quam ac malesuada. Maecenas ullamcorper nulla at diam eleifend maximus. Donec commodo, magna efficitur hendrerit accumsan, lacus augue gravida quam, sed mollis mi eros sit amet enim." name="BodyLabel" class="body" />
                     <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
-                    <ui:Label text="Form" name="FormSectionLabel" class="h2" />
+                    <ui:Label text="Form" name="FormLabel" class="h2" />
                     <ui:VisualElement name="Form" class="form">
                         <ui:TextField label="Text Field" placeholder-text="filler text" />
                         <ui:TextField label="Text Field" placeholder-text="filler text" />
