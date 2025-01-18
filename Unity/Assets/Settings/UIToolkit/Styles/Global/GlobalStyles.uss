@@ -51,7 +51,7 @@
 
 .line {
     flex-grow: 0;
-    background-color: var(--theme-line-color);
+    background-color: var(--theme-background-color-inverse);
     min-width: 5px;
     min-height: 5px;
 }

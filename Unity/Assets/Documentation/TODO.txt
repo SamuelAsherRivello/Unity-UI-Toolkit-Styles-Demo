@@ -1,9 +1,8 @@
 TODO
 * (None)
 
-
 WORKFLOW: PROS
-* Global styles (e.g. all layouts
+* Global styles (e.g. all layouts)
 * Shared styles (e.g. all page layouts)
 * Unshared styles (e.g. layout specific)
 * Excellent cascading of styles. 
@@ -12,7 +11,6 @@ WORKFLOW: PROS
 
 WORKFLOW: CONS
 * (None)
-
 
 WORKFLOW: PENDING
 * How to auto-complete when entering custom variables in ui builder?

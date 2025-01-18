@@ -1,8 +1,6 @@
 :root {
     --theme-background-color: white;
     --theme-background-color-inverse: black;
-    --theme-line-color: black;
-    --theme-line-color-inverse: white;
     --theme-font-color: black;
     --theme-font-color-inverse: white;
 }
