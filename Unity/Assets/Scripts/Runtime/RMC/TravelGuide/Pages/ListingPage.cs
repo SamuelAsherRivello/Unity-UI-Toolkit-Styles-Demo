@@ -21,17 +21,10 @@ namespace RMC.TravelGuide.Pages
         /// <summary>
         /// Runs once per Scene. Use for initialization
         /// </summary>
-        protected void Start()
+        protected override void Start()
         {
+            base.Start();
             Debug.Log($"{GetType().Name}.Start()");
-            
-        }
-
-        /// <summary>
-        /// Runs every frame. Use for input/physics/gameplay
-        /// </summary>
-        protected void Update()
-        {
         }
 
         

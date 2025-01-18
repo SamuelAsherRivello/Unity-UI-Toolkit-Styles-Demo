@@ -25,28 +25,17 @@ namespace RMC.TravelGuide.Page.UIs
 
         private ThemeManager _themeManager;
         
+        
         //  Unity Methods ---------------------------------
         protected virtual void Start()
         {
-            Debug.Log($"{GetType().Name}.Start()");
-            
             // Initialize the ThemeManager
             _themeManager = new ThemeManager(_uiDocument, _lightStyleSheet, _darkStyleSheet);
         }
 
         
-        protected void Update()
-        {
-            // Click [2] to toggle the theme
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                ToggleTheme();
-            }
-        }
-
-        
         //  Methods ---------------------------------------
-        private void ToggleTheme()
+        public void ToggleTheme()
         {
             _themeManager.IsDark = !_themeManager.IsDark;
             //Debug.Log($"ThemeManager.IsDark = {_themeManager.IsDark}");

@@ -23,38 +23,65 @@ namespace RMC.TravelGuide.Pages
         /// <summary>
         /// Runs once per Scene. Use for initialization
         /// </summary>
-        protected void Start()
+        protected virtual void Start()
         {
-            Debug.Log($"{GetType().Name}.Start()");
+            //
         }
 
-        /// <summary>
-        /// Runs every frame. Use for input/physics/gameplay
-        /// </summary>
+        
         protected void Update()
         {
+            // Click [2] to toggle the theme
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                _pageUI.ToggleTheme();
+            }
+            
+            // Click [3] to reload scene
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                ReloadScene();
+            }
+            
+            // Click [4] to reload game
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                ReloadGame();
+            }
         }
-
+        
         
         //  Methods ---------------------------------------
         /// <summary>
         /// Restart the same Scene as a #hack to restart the game
         /// </summary>
-        private void ReloadGame()
+        private void ReloadScene()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
+        
+        /// <summary>
+        /// Restart the same Scene as a #hack to restart the game
+        /// </summary>
+        private void ReloadGame()
+        {
+            SceneManager.LoadScene(0);
+        }
+        
 
         /// <summary>
-        /// Play system using the AudioManager imported via https://github.com/SamuelAsherRivello/rmc-core/
+        /// Play audio using the AudioManager imported via
+        /// https://github.com/SamuelAsherRivello/rmc-core/
         /// </summary>
-        /// <param name="audioClipName">Must match AudioClip name within Assets/Settings/Audio/AudioManagerConfiguration.asset</param>
+        /// <param name="audioClipName">Must match AudioClip name within
+        /// Assets/Settings/Audio/AudioManagerConfiguration.asset</param>
         private void PlayAudioClip(string audioClipName)
         {
             AudioManager.Instance.PlayAudioClip(audioClipName);
         }
 
+        
         //  Event Handlers --------------------------------
     }
 }

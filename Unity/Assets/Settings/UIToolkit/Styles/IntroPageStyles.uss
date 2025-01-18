@@ -6,12 +6,11 @@
 }
 
 .right-container {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 10%;
     margin-bottom: 10%;
     margin-left: 10%;
 }
-
 
 .form {
     flex-grow: 1;
@@ -23,4 +22,7 @@
     -unity-background-scale-mode: scale-to-fit;
     width: 800px;
     height: 800px;
+}
+
+.label {
 }

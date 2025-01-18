@@ -3,17 +3,20 @@
     <Style src="project://database/Assets/Settings/UIToolkit/Styles/HUDStyles.uss?fileID=7433441132597879392&amp;guid=43ba2875f26b2f84a970743f21515de8&amp;type=3#HUDStyles" />
     <ui:VisualElement name="RootContainer" class="container" style="flex-grow: 1;">
         <ui:VisualElement name="ContentLayer" class="layer content-layer">
-            <ui:VisualElement name="UpperLeftCornerContainer" class="corner-container" style="top: 0; left: 0;">
-                <ui:Label text="Corner&lt;br&gt;&lt;b&gt;Instructions: Click [2] To Toggle Themes&lt;/b&gt;" name="CornerLabel" class="corner-label" />
+            <ui:VisualElement name="UpperMiddleContainer" class="small-container" style="top: 0; left: 50%; right: 50%; position: absolute; flex-grow: 1; translate: -50% 0;">
+                <ui:Label text="&lt;b&gt;Instructions:&lt;/b&gt;&lt;br&gt;Click [2] To Toggle Themes&lt;br&gt;Click [3] To Reload Scene&lt;br&gt;Click [4] To Reload Game" name="Label" class="label" style="-unity-text-align: upper-center;" />
             </ui:VisualElement>
-            <ui:VisualElement name="UpperRightCornerContainer" class="corner-container" style="right: 0; align-items: flex-end;">
-                <ui:Label text="Corner" name="CornerLabel" class="corner-label" />
+            <ui:VisualElement name="UpperLeftCornerContainer" class="small-container" style="top: 0; left: 0;">
+                <ui:Label text="Corner" name="Label" class="label" />
             </ui:VisualElement>
-            <ui:VisualElement name="LowerLeftCornerContainer" class="corner-container" style="left: 0; bottom: 0; justify-content: flex-end;">
-                <ui:Label text="Corner" name="CornerLabel" class="corner-label" style="flex-direction: column;" />
+            <ui:VisualElement name="UpperRightCornerContainer" class="small-container" style="right: 0; align-items: flex-end;">
+                <ui:Label text="Corner" name="Label" class="label" />
             </ui:VisualElement>
-            <ui:VisualElement name="LowerRightCornerContainer" class="corner-container" style="right: 0; bottom: 0; justify-content: flex-end; align-items: flex-end;">
-                <ui:Label text="Corner" name="CornerLabel" class="corner-label" />
+            <ui:VisualElement name="LowerLeftCornerContainer" class="small-container" style="left: 0; bottom: 0; justify-content: flex-end;">
+                <ui:Label text="Corner" name="Label" class="label" style="flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="LowerRightCornerContainer" class="small-container" style="right: 0; bottom: 0; justify-content: flex-end; align-items: flex-end;">
+                <ui:Label text="Corner" name="Label" class="label" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="DebugLayer" picking-mode="Ignore" class="layer" />

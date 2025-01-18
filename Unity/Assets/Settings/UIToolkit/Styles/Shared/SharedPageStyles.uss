@@ -1,9 +1,9 @@
 .center-container {
     background-color: var(--theme-background-color);
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
+    margin-top: 7%;
+    margin-right: 7%;
+    margin-bottom: 7%;
+    margin-left: 7%;
     padding-top: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
