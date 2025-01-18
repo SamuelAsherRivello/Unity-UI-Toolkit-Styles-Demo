@@ -1,14 +1,16 @@
 
 # Unity UI Toolkit Styles Demo
 
-Demonstrates general Unity best practices plus UI toolkit styles.
+This project was cloned from the general <a href="https://github.com/SamuelAsherRivello/unity-project-template" target="_blank">Unity Project Template<a/>. This repo is updated to focus on best practices, specifically for UI Toolkit workflows.
 
-UI Toolkit learnings...
-* Toggle Theme light/dark
-* Global Styles
-* Page based sub-styles
-* Cascading styles, layout, assets, and more across multiple Scenes
-* Best workflow to maximize UI Builder's features
+**Workflow Benefits Include:**
+
+* Global styles (e.g. all layouts)
+* Shared styles (e.g. all page layouts)
+* Unshared styles (e.g. layout-specific)
+* Excellent cascading of styles. 
+* Excellent theming (dark is default at **BOTH** edit-time and runtime)
+* Excellent use of Unity UI Builder (100% builder preview of all layout, styles, etc...) to maximize its WYSIWYG workflow
 
 <BR>
 
