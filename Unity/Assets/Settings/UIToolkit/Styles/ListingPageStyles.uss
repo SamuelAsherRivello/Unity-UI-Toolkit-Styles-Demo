@@ -1,0 +1,26 @@
+.list-item {
+    flex-grow: 1;
+    background-image: url("project://database/Assets/Art/Vectors/Item02.svg?fileID=7388822144124034973&guid=98eb654e97b9943faa3d5354c177a2a9&type=3#Item02");
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(255, 0, 0, 0);
+    width: 350px;
+    height: 350px;
+}
+
+.list {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: stretch;
+    align-content: stretch;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.spacer-small {
+    min-width: 40px;
+    min-height: 40px;
+}

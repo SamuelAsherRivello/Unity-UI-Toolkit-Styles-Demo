@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 19001, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ArialBold_SDF
+  m_Name: ArialBold
   m_EditorClassIdentifier: 
   m_Version: 1.1.0
   m_Material: {fileID: -3862889000580993229}

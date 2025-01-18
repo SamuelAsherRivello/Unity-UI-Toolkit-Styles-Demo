@@ -1,0 +1,63 @@
+.unity-text-element {
+    color: var(--theme-font-color);
+    font-size: 40px;
+    -unity-font-style: normal;
+    -unity-font: initial;
+    -unity-font-definition: url("project://database/Assets/Art/Fonts/Arial.asset?fileID=11400000&guid=842c5f3696fbc2648ad656c14fe7acb8&type=2#Arial");
+    letter-spacing: 3px;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.center-container {
+    background-color: var(--theme-background-color);
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+.content-layer {
+    background-color: rgb(128, 102, 0);
+}
+
+.logo {
+    background-image: url("project://database/Assets/Art/Vectors/Logo.svg?fileID=7388822144124034973&guid=a9e5b9b31da73b047ae9fe3c2bc2c702&type=3#Logo");
+    -unity-background-scale-mode: scale-to-fit;
+    width: 800px;
+    height: 800px;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.form {
+    flex-grow: 1;
+    align-content: center;
+}
+
+.line {
+    flex-grow: 0;
+    background-color: var(--theme-line-color);
+    min-width: 5px;
+    min-height: 5px;
+}
+
+.h1 {
+    font-size: 100px;
+}
+
+.body {
+    white-space: pre-wrap;
+}

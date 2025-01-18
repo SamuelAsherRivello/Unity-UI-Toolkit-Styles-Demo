@@ -1,0 +1,5 @@
+:root {
+    --theme-background-color: white;
+    --theme-line-color: black;
+    --theme-font-color: black;
+}
