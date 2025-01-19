@@ -12,15 +12,30 @@
                 <ui:VisualElement name="RightContainer" class="container right-container" style="flex-grow: 1; align-self: stretch;">
                     <ui:Label text="Introduction" name="TitleLabel" class="h1" />
                     <ui:VisualElement name="Spacer" class="spacer-small" />
-                    <ui:Label text="About" name="AboutLabel" class="h2" />
-                    <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mauris dui, imperdiet eget aliquam id, viverra malesuada enim. Aenean consectetur pellentesque quam ac malesuada. Maecenas ullamcorper nulla at diam eleifend maximus. Donec commodo, magna efficitur hendrerit accumsan, lacus augue gravida quam, sed mollis mi eros sit amet enim." name="BodyLabel" class="body" />
-                    <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
-                    <ui:Label text="Form" name="FormLabel" class="h2" />
-                    <ui:VisualElement name="Form" class="form">
-                        <ui:TextField label="Text Field" placeholder-text="filler text" />
-                        <ui:TextField label="Text Field" placeholder-text="filler text" />
-                    </ui:VisualElement>
-                    <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                    <ui:TabView tabindex="1" name="TabView" style="flex-shrink: 0;">
+                        <ui:Tab label="AboutTab" name="AboutTab" style="flex-shrink: 0;">
+                            <ui:Label text="About" name="AboutLabel" class="h2" />
+                            <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mauris dui, imperdiet eget aliquam id, viverra malesuada enim. Aenean consectetur pellentesque quam ac malesuada. Maecenas ullamcorper nulla at diam eleifend maximus. Donec commodo, magna efficitur hendrerit accumsan, lacus augue gravida quam, sed mollis mi eros sit amet enim." name="BodyLabel" class="body" />
+                            <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                            <ui:Label text="Form" name="FormLabel" class="h2" />
+                            <ui:VisualElement name="Form" class="form">
+                                <ui:TextField label="Text Field" placeholder-text="filler text" />
+                                <ui:TextField label="Text Field" placeholder-text="filler text" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                        </ui:Tab>
+                        <ui:Tab label="MoreTab&#x9;" name="MoreTab" style="flex-shrink: 0;">
+                            <ui:Label text="More About" name="AboutLabel" class="h2" />
+                            <ui:Label text="Consectetur adipiscing elit. Pellentesque mauris dui, imperdiet eget aliquam id, viverra malesuada enim. Aenean consectetur pellentesque quam ac malesuada. Maecenas ullamcorper nulla at diam eleifend maximus. Donec commodo, magna efficitur hendrerit accumsan, lacus augue gravida quam, sed mollis mi eros sit amet enim. Lorem ipsum dolor sit amet." name="BodyLabel" class="body" />
+                            <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                            <ui:Label text="More Form" name="FormLabel" class="h2" />
+                            <ui:VisualElement name="Form" class="form">
+                                <ui:TextField label="Text Field" placeholder-text="filler text" />
+                                <ui:TextField label="Text Field" placeholder-text="filler text" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                        </ui:Tab>
+                    </ui:TabView>
                     <ui:Button text="Next Section" name="NextSectionButton" />
                     <ui:Button text="Next Page" name="NextPageButton" />
                 </ui:VisualElement>

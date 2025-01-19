@@ -13,3 +13,7 @@
 .content-layer {
     background-color: rgb(97, 92, 0);
 }
+
+.unity-tab-view > #unity-tab-view__header-container > #unity-tab__header {
+    display: none;
+}

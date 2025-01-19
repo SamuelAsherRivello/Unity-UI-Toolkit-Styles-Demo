@@ -44,7 +44,13 @@ namespace RMC.TravelGuide.Pages
         //  Event Handlers --------------------------------
         private void NextSectionButton_OnClickEvent(ClickEvent evt)
         {
-            Debug.Log("TODO: NextSectionButton_OnClickEvent() ");
+            int nextSelectedTabIndex = IntroPageUI.TabView.selectedTabIndex + 1;
+            if (nextSelectedTabIndex >= IntroPageUI.TabView.childCount)
+            {
+                nextSelectedTabIndex = 0;
+            }
+
+            IntroPageUI.TabView.selectedTabIndex = nextSelectedTabIndex;
         }
         
         private void NextPageButton_OnClickEvent(ClickEvent evt)

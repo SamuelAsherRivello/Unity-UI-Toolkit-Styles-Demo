@@ -12,7 +12,7 @@ namespace RMC.TravelGuide.Page.UIs
         //  Properties ------------------------------------
         public Button NextSectionButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextSectionButton"); }}
         public Button NextPageButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextPageButton"); }}
-        
+        public TabView TabView { get { return UIDocument?.rootVisualElement?.Q<TabView>("TabView"); }}
         
         //  Fields ----------------------------------------
 
