@@ -13,8 +13,7 @@
 }
 
 .form {
-    flex-grow: 1;
-    align-content: center;
+    flex-shrink: 0;
 }
 
 .logo {

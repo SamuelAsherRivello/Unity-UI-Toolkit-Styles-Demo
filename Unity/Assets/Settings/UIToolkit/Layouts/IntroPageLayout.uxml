@@ -19,10 +19,10 @@
                     <ui:VisualElement name="Form" class="form">
                         <ui:TextField label="Text Field" placeholder-text="filler text" />
                         <ui:TextField label="Text Field" placeholder-text="filler text" />
-                        <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
-                        <ui:Button text="Next Section" name="NextSectionButton" />
-                        <ui:Button text="Next Page" name="NextPageButton" />
                     </ui:VisualElement>
+                    <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
+                    <ui:Button text="Next Section" name="NextSectionButton" />
+                    <ui:Button text="Next Page" name="NextPageButton" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
