@@ -26,14 +26,12 @@ namespace RMC.TravelGuide.Pages
             Debug.Log($"{GetType().Name}.Start()");
             
             ListingPageUI.NextPageButton.RegisterCallback<ClickEvent>(NextPageButton_OnClickEvent);
-            ListingPageUI.NextSectionButton.RegisterCallback<ClickEvent>(NextSectionButton_OnClickEvent);
         }
         
         
         protected override void OnDestroy()
         {
             ListingPageUI?.NextPageButton?.UnregisterCallback<ClickEvent>(NextPageButton_OnClickEvent);
-            ListingPageUI?.NextSectionButton?.UnregisterCallback<ClickEvent>(NextSectionButton_OnClickEvent);
             base.OnDestroy();
         }
 
@@ -42,11 +40,6 @@ namespace RMC.TravelGuide.Pages
 
         
         //  Event Handlers --------------------------------
-        private void NextSectionButton_OnClickEvent(ClickEvent evt)
-        {
-            Debug.Log("TODO: NextSectionButton_OnClickEvent() ");
-        }
-        
         private void NextPageButton_OnClickEvent(ClickEvent evt)
         {
             LoadNextScene();

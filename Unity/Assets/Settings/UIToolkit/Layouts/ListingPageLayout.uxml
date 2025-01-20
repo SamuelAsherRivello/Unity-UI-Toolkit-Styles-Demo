@@ -24,7 +24,6 @@
                     <ui:VisualElement name="ListItem" class="list-item" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Spacer" class="spacer-small" style="flex-grow: 1;" />
-                <ui:Button text="Next Section" name="NextSectionButton" />
                 <ui:Button text="Next Page" name="NextPageButton" />
             </ui:VisualElement>
         </ui:VisualElement>

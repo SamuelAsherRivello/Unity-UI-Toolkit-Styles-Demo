@@ -10,7 +10,6 @@ namespace RMC.TravelGuide.Page.UIs
     public class ListingPageUI : PageUI
     {
         //  Properties ------------------------------------
-        public Button NextSectionButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextSectionButton"); }}
         public Button NextPageButton { get { return UIDocument?.rootVisualElement?.Q<Button>("NextPageButton"); }}
         
         
